@@ -1,0 +1,119 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+p {
+    font-size: 1.1em;
+    margin-top: 15px;
+    color: #666;
+}
+
+#cotacao {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Área do conversor */
+.converter {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Label e Seleção */
+label {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    max-width: 250px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 1em;
+    transition: border 0.2s ease;
+}
+
+select:focus, input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botão de conversão */
+button {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 15px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Exibição do Resultado */
+#resultado {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 15px;
+}
+
+/* Adaptabilidade para telas pequenas */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #cotacao, #resultado {
+        font-size: 1em;
+    }
+}
